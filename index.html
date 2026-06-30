@@ -1,0 +1,2842 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ABRAJ Solutions — Health &amp; Life Insurance Guidance</title>
+<meta name="description" content="ABRAJ Solutions — Managed by Sai Teja Gandepalli. Creating Awareness. Building Trust. Protecting Futures. Helping individuals, families and businesses make informed insurance choices.">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+/* =========================================================================
+ABRAJ SOLUTIONS — Brand Styling & Layout Rules
+========================================================================= */
+:root {
+--charcoal-950: #0a0b0d;
+--charcoal-900: #121317;
+--charcoal-850: #16181d;
+--charcoal-800: #1b1d22;
+--charcoal-700: #2a2d33;
+--charcoal-600: #3a3d44;
+--white: #f6f5f1;
+--white-dim: #b7b6b9;
+--white-faint: #7d7c81;
+--gold: #c9a961;
+--gold-bright: #e0c387;
+--gold-dim: rgba(201, 169, 97, .12);
+--gold-line: rgba(201, 169, 97, .35);
+--success: #4caf7d;
+--error: #e5635b;
+--whatsapp: #25d366;
+
+/* Typography */
+--font-display: 'Space Grotesk', sans-serif;
+--font-body: 'Inter', sans-serif;
+--font-mono: 'JetBrains Mono', monospace;
+
+/* Sizing scale */
+--container-w: 1240px;
+--radius-sm: 6px;
+--radius-md: 10px;
+--radius-lg: 16px;
+--header-h: 76px;
+
+/* Timing classes */
+--ease: cubic-bezier(.4, 0, .2, 1);
+--t-fast: 160ms;
+--t-med: 320ms;
+--t-slow: 600ms;
+}
+
+/* ---------- Basic Reset Rules ---------- */
+*, *::before, *::after {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+html {
+scroll-behavior: smooth;
+}
+@media (prefers-reduced-motion: reduce) {
+html { scroll-behavior: auto; }
+*, *::before, *::after {
+animation-duration: .01ms !important;
+animation-iteration-count: 1 !important;
+transition-duration: .01ms !important;
+scroll-behavior: auto !important;
+}
+}
+body {
+background: var(--charcoal-950);
+color: var(--white);
+font-family: var(--font-body);
+font-size: 16px;
+line-height: 1.6;
+-webkit-font-smoothing: antialiased;
+overflow-x: hidden;
+}
+img {
+max-width: 100%;
+display: block;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+ul, ol {
+list-style: none;
+}
+button {
+font: inherit;
+color: inherit;
+background: none;
+border: none;
+cursor: pointer;
+}
+input, textarea {
+font: inherit;
+color: inherit;
+}
+h1, h2, h3, h4 {
+font-family: var(--font-display);
+font-weight: 600;
+line-height: 1.15;
+letter-spacing: -0.01em;
+}
+svg {
+display: block;
+flex-shrink: 0;
+}
+
+.skip-link {
+position: absolute;
+top: -100px;
+left: 16px;
+z-index: 999;
+background: var(--gold);
+color: var(--charcoal-950);
+padding: 10px 18px;
+border-radius: var(--radius-sm);
+font-weight: 600;
+transition: top var(--t-fast) var(--ease);
+}
+.skip-link:focus {
+top: 16px;
+}
+
+:focus-visible {
+outline: 2px solid var(--gold);
+outline-offset: 3px;
+}
+
+.container {
+max-width: var(--container-w);
+margin-inline: auto;
+padding-inline: 32px;
+}
+
+.text-gold {
+color: var(--gold);
+}
+
+/* ---------- Sectioning Structures ---------- */
+.section {
+padding: 128px 0;
+}
+.section--alt {
+background: var(--charcoal-900);
+}
+
+.section-head {
+max-width: 640px;
+margin-bottom: 64px;
+}
+.section-title {
+font-size: clamp(2rem, 3.2vw, 2.75rem);
+margin-top: 12px;
+margin-bottom: 16px;
+}
+.section-subtitle {
+color: var(--white-dim);
+font-size: 1.05rem;
+max-width: 560px;
+}
+
+.eyebrow {
+display: inline-flex;
+align-items: center;
+gap: 8px;
+font-family: var(--font-mono);
+font-size: .78rem;
+letter-spacing: .12em;
+text-transform: uppercase;
+color: var(--gold);
+}
+.eyebrow__dot {
+width: 7px;
+height: 7px;
+border-radius: 50%;
+background: var(--success);
+box-shadow: 0 0 0 0 rgba(76, 175, 125, .6);
+animation: pulse 2.4s var(--ease) infinite;
+}
+@keyframes pulse {
+0% { box-shadow: 0 0 0 0 rgba(76, 175, 125, .5); }
+70% { box-shadow: 0 0 0 7px rgba(76, 175, 125, 0); }
+100% { box-shadow: 0 0 0 0 rgba(76, 175, 125, 0); }
+}
+
+/* ---------- Scrolling Transitions ---------- */
+.reveal {
+opacity: 0;
+transform: translateY(24px);
+transition: opacity var(--t-slow) var(--ease), transform var(--t-slow) var(--ease);
+}
+.reveal.is-visible {
+opacity: 1;
+transform: translateY(0);
+}
+
+/* ---------- Interactive High-Target Buttons ---------- */
+.btn {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+gap: 8px;
+padding: 14px 26px;
+border-radius: var(--radius-sm);
+font-weight: 600;
+font-size: .95rem;
+white-space: nowrap;
+transition: transform var(--t-fast) var(--ease), background var(--t-fast) var(--ease), border-color var(--t-fast) var(--ease), box-shadow var(--t-fast) var(--ease);
+cursor: pointer;
+border: 1px solid transparent;
+min-height: 48px;
+}
+.btn--lg {
+padding: 16px 30px;
+font-size: 1rem;
+}
+.btn--sm {
+padding: 10px 18px;
+font-size: .85rem;
+}
+.btn--full {
+width: 100%;
+}
+.btn__icon {
+transition: transform var(--t-fast) var(--ease);
+}
+.btn:hover .btn__icon {
+transform: translateX(3px);
+}
+
+.btn--gold {
+background: var(--gold);
+color: var(--charcoal-950);
+}
+.btn--gold:hover {
+background: var(--gold-bright);
+box-shadow: 0 8px 24px -8px rgba(201, 169, 97, .55);
+transform: translateY(-2px);
+}
+.btn--outline {
+background: transparent;
+border-color: var(--charcoal-600);
+color: var(--white);
+}
+.btn--outline:hover {
+border-color: var(--gold);
+color: var(--gold);
+transform: translateY(-2px);
+}
+
+.btn--gold:disabled {
+opacity: .7;
+cursor: not-allowed;
+transform: none;
+}
+
+.btn__spinner {
+display: none;
+width: 16px;
+height: 16px;
+border-radius: 50%;
+border: 2px solid rgba(10, 11, 13, .3);
+border-top-color: var(--charcoal-950);
+animation: spin .7s linear infinite;
+}
+.btn.is-loading .btn__spinner {
+display: inline-block;
+}
+.btn.is-loading .btn__text {
+opacity: .6;
+}
+@keyframes spin {
+to { transform: rotate(360deg); }
+}
+
+/* ---------- Header Navigation bar ---------- */
+.site-header {
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+z-index: 200;
+height: var(--header-h);
+display: flex;
+align-items: center;
+border-bottom: 1px solid transparent;
+transition: background var(--t-med) var(--ease), border-color var(--t-med) var(--ease), backdrop-filter var(--t-med) var(--ease);
+}
+.site-header.is-scrolled {
+background: rgba(10, 11, 13, .78);
+backdrop-filter: blur(14px);
+-webkit-backdrop-filter: blur(14px);
+border-bottom-color: var(--charcoal-700);
+}
+.site-header__inner {
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.logo {
+display: inline-flex;
+align-items: center;
+}
+.logo__image {
+height: 48px;
+width: auto;
+display: block;
+}
+
+.logo__dot {
+color: var(--gold);
+}
+
+.main-nav__list {
+display: flex;
+align-items: center;
+gap: 28px;
+}
+.main-nav__link {
+position: relative;
+font-size: .9rem;
+color: var(--white-dim);
+padding: 12px 0;
+transition: color var(--t-fast) var(--ease);
+display: inline-block;
+}
+.main-nav__link::after {
+content: "";
+position: absolute;
+left: 0;
+bottom: 6px;
+width: 0;
+height: 1px;
+background: var(--gold);
+transition: width var(--t-fast) var(--ease);
+}
+.main-nav__link:hover {
+color: var(--white);
+}
+.main-nav__link.active-link {
+color: var(--gold);
+}
+.main-nav__link.active-link::after {
+width: 100%;
+}
+
+.site-header__actions {
+display: flex;
+align-items: center;
+gap: 18px;
+}
+
+.nav-toggle {
+display: none;
+flex-direction: column;
+justify-content: center;
+gap: 5px;
+width: 44px;
+height: 44px;
+align-items: center;
+}
+.nav-toggle span {
+width: 24px;
+height: 1.5px;
+background: var(--white);
+transition: transform var(--t-fast) var(--ease), opacity var(--t-fast) var(--ease);
+}
+.nav-toggle.is-open span:nth-child(1) {
+transform: translateY(6.5px) rotate(45deg);
+}
+.nav-toggle.is-open span:nth-child(2) {
+opacity: 0;
+}
+.nav-toggle.is-open span:nth-child(3) {
+transform: translateY(-6.5px) rotate(-45deg);
+}
+
+/* ---------- Hero Arena ---------- */
+.hero {
+position: relative;
+padding-top: calc(var(--header-h) + 96px);
+padding-bottom: 96px;
+overflow: hidden;
+}
+.hero__grid-bg {
+position: absolute;
+inset: 0;
+background-image: linear-gradient(var(--charcoal-800) 1px, transparent 1px), linear-gradient(90deg, var(--charcoal-800) 1px, transparent 1px);
+background-size: 64px 64px;
+-webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 20%, black 10%, transparent 75%);
+mask-image: radial-gradient(ellipse 70% 60% at 50% 20%, black 10%, transparent 75%);
+opacity: .6;
+pointer-events: none;
+}
+.hero__inner {
+display: grid;
+grid-template-columns: 1.15fr .85fr;
+gap: 64px;
+align-items: center;
+position: relative;
+}
+
+.hero__title {
+font-size: clamp(2.4rem, 4.4vw, 3.6rem);
+margin-top: 22px;
+max-width: 16ch;
+}
+.hero__subtitle {
+margin-top: 24px;
+font-size: 1.1rem;
+color: var(--white-dim);
+max-width: 46ch;
+}
+.hero__cta {
+display: flex;
+flex-wrap: wrap;
+gap: 16px;
+margin-top: 40px;
+}
+
+.hero__stats {
+display: grid;
+grid-template-columns: repeat(4, auto);
+gap: 32px;
+margin-top: 64px;
+padding-top: 36px;
+border-top: 1px solid var(--charcoal-700);
+}
+.hero__stat-value {
+font-family: var(--font-mono);
+font-size: 1.6rem;
+font-weight: 500;
+color: var(--gold);
+}
+.hero__stat-label {
+font-size: .8rem;
+color: var(--white-faint);
+margin-top: 4px;
+}
+
+/* Hero Badge Frame */
+.hero__visual {
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 420px;
+}
+
+.avatar-frame {
+position: relative;
+width: 320px;
+height: 320px;
+display: flex;
+align-items: center;
+justify-content: center;
+background: radial-gradient(circle at 50% 40%, var(--charcoal-850), var(--charcoal-950));
+border-radius: var(--radius-lg);
+}
+.avatar-frame::before {
+content: "";
+position: absolute;
+inset: 0;
+border-radius: var(--radius-lg);
+background: radial-gradient(circle at 50% 30%, var(--gold-dim), transparent 65%);
+pointer-events: none;
+}
+.avatar-frame__monogram {
+width: 78%;
+height: 78%;
+color: var(--gold);
+}
+
+.avatar-frame__corner {
+position: absolute;
+width: 28px;
+height: 28px;
+border-color: var(--gold);
+opacity: .85;
+}
+.avatar-frame__corner--tl { top: -1px; left: -1px; border-top: 2px solid; border-left: 2px solid; border-top-left-radius: 6px; }
+.avatar-frame__corner--tr { top: -1px; right: -1px; border-top: 2px solid; border-right: 2px solid; border-top-right-radius: 6px; }
+.avatar-frame__corner--bl { bottom: -1px; left: -1px; border-bottom: 2px solid; border-left: 2px solid; border-bottom-left-radius: 6px; }
+.avatar-frame__corner--br { bottom: -1px; right: -1px; border-bottom: 2px solid; border-right: 2px solid; border-bottom-right-radius: 6px; }
+
+.avatar-frame__badge {
+position: absolute;
+bottom: -18px;
+left: 50%;
+transform: translateX(-50%);
+display: inline-flex;
+align-items: center;
+gap: 7px;
+background: var(--charcoal-800);
+border: 1px solid var(--charcoal-700);
+padding: 8px 16px;
+border-radius: 999px;
+font-size: .78rem;
+font-family: var(--font-mono);
+white-space: nowrap;
+box-shadow: 0 12px 28px -10px rgba(0, 0, 0, .6);
+}
+.avatar-frame__badge-dot {
+width: 6px;
+height: 6px;
+border-radius: 50%;
+background: var(--success);
+}
+
+.floating-card {
+position: absolute;
+background: var(--charcoal-850);
+border: 1px solid var(--charcoal-700);
+border-radius: var(--radius-md);
+padding: 14px 18px;
+display: flex;
+flex-direction: column;
+gap: 3px;
+box-shadow: 0 16px 34px -14px rgba(0, 0, 0, .65);
+animation: float 6s ease-in-out infinite;
+}
+.floating-card--role {
+top: 8%;
+right: -2%;
+}
+.floating-card--location {
+bottom: 6%;
+left: -4%;
+animation-delay: -3s;
+}
+.floating-card__label {
+font-family: var(--font-mono);
+font-size: .68rem;
+color: var(--white-faint);
+text-transform: uppercase;
+letter-spacing: .08em;
+}
+.floating-card__value {
+font-size: .85rem;
+font-weight: 600;
+}
+@keyframes float {
+0%, 100% { transform: translateY(0); }
+50% { transform: translateY(-10px); }
+}
+
+/* ---------- Core Quotation banner ---------- */
+.quote-banner {
+background: var(--charcoal-900);
+padding: 80px 0;
+border-top: 1px solid var(--charcoal-800);
+border-bottom: 1px solid var(--charcoal-800);
+text-align: center;
+}
+.quotation-card {
+max-width: 800px;
+margin: 0 auto;
+}
+.quotation-card__text {
+font-family: var(--font-display);
+font-size: clamp(1.4rem, 2.5vw, 2.1rem);
+font-weight: 500;
+line-height: 1.4;
+color: var(--white);
+margin-bottom: 20px;
+font-style: italic;
+}
+.quotation-card__author {
+font-family: var(--font-mono);
+font-size: 0.9rem;
+text-transform: uppercase;
+color: var(--gold);
+letter-spacing: 0.1em;
+}
+
+/* ---------- Founder Grid Segment ---------- */
+.founder-grid {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 48px;
+align-items: start;
+}
+.founder-card {
+background: var(--charcoal-850);
+border: 1px solid var(--charcoal-700);
+border-radius: var(--radius-lg);
+padding: 48px;
+}
+.founder-card__badge {
+display: inline-block;
+font-family: var(--font-mono);
+font-size: .72rem;
+color: var(--gold);
+border: 1px solid var(--gold-line);
+padding: 4px 10px;
+border-radius: 999px;
+margin-bottom: 16px;
+text-transform: uppercase;
+}
+.founder-name {
+font-size: 2rem;
+color: var(--white);
+}
+.founder-role {
+font-family: var(--font-mono);
+color: var(--gold);
+font-size: .9rem;
+margin-top: 4px;
+}
+.founder-bio {
+color: var(--white-dim);
+margin-top: 24px;
+font-size: 1rem;
+}
+.founder-metrics {
+margin-top: 36px;
+border-top: 1px solid var(--charcoal-700);
+padding-top: 28px;
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+.founder-metric {
+display: flex;
+flex-direction: column;
+gap: 4px;
+}
+.metric-num {
+font-family: var(--font-display);
+font-size: 1.4rem;
+font-weight: 600;
+color: var(--gold);
+}
+.metric-desc {
+font-size: .88rem;
+color: var(--white-faint);
+}
+
+.founder-mission {
+padding-top: 20px;
+}
+.mission-title {
+font-size: 1.6rem;
+margin-bottom: 18px;
+}
+.mission-text {
+color: var(--white-dim);
+margin-bottom: 24px;
+font-size: 1.05rem;
+}
+.mission-list {
+display: flex;
+flex-direction: column;
+gap: 12px;
+}
+.mission-list li {
+font-size: 1rem;
+color: var(--white);
+}
+
+/* ---------- Grid Patterns ---------- */
+.expertise-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 1px;
+background: var(--charcoal-700);
+border: 1px solid var(--charcoal-700);
+border-radius: var(--radius-lg);
+overflow: hidden;
+}
+.expertise-card {
+background: var(--charcoal-950);
+padding: 40px 32px;
+transition: background var(--t-fast) var(--ease);
+}
+.expertise-card:hover {
+background: var(--charcoal-900);
+}
+.expertise-card__icon {
+width: 52px;
+height: 52px;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: var(--radius-sm);
+background: var(--gold-dim);
+color: var(--gold);
+margin-bottom: 22px;
+}
+.expertise-card__title {
+font-size: 1.15rem;
+margin-bottom: 10px;
+}
+.expertise-card__text {
+color: var(--white-dim);
+font-size: .93rem;
+}
+
+/* ---------- Articles Grid ---------- */
+.articles-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 24px;
+}
+.article-card {
+background: var(--charcoal-850);
+border: 1px solid var(--charcoal-700);
+padding: 36px;
+border-radius: var(--radius-lg);
+transition: border-color var(--t-fast) var(--ease), transform var(--t-fast) var(--ease);
+}
+.article-card:hover {
+border-color: var(--gold-line);
+transform: translateY(-4px);
+}
+.article-card__meta {
+font-family: var(--font-mono);
+font-size: .72rem;
+color: var(--gold);
+text-transform: uppercase;
+letter-spacing: .08em;
+margin-bottom: 14px;
+}
+.article-card__title {
+font-size: 1.2rem;
+margin-bottom: 12px;
+}
+.article-card__text {
+color: var(--white-dim);
+font-size: .92rem;
+}
+
+/* ---------- Careers Hub Grid ---------- */
+.careers-grid {
+display: grid;
+grid-template-columns: 1.1fr .9fr;
+gap: 48px;
+align-items: start;
+}
+.careers-content {
+padding-right: 16px;
+}
+.careers-lead-title {
+font-size: 1.8rem;
+margin-bottom: 16px;
+}
+.careers-lead-text {
+color: var(--white-dim);
+font-size: 1.1rem;
+margin-bottom: 36px;
+}
+.career-perks {
+display: flex;
+flex-direction: column;
+gap: 28px;
+}
+.perk-title {
+font-size: 1.15rem;
+margin-bottom: 6px;
+}
+.perk-desc {
+color: var(--white-dim);
+font-size: .93rem;
+}
+
+.careers-form-wrap {
+background: var(--charcoal-850);
+border: 1px solid var(--charcoal-700);
+border-radius: var(--radius-lg);
+padding: 40px;
+}
+.careers-form-title {
+font-size: 1.4rem;
+margin-bottom: 6px;
+}
+.careers-form-sub {
+color: var(--white-faint);
+font-size: .88rem;
+margin-bottom: 24px;
+}
+
+/* ---------- High Contrast Contact Grid ---------- */
+.contact-grid {
+display: grid;
+grid-template-columns: .85fr 1.15fr;
+gap: 48px;
+align-items: start;
+}
+
+.contact-direct {
+display: flex;
+flex-direction: column;
+gap: 14px;
+}
+
+.contact-action {
+display: flex;
+align-items: center;
+gap: 16px;
+padding: 18px 20px;
+background: var(--charcoal-850);
+border: 1px solid var(--charcoal-700);
+border-radius: var(--radius-md);
+transition: border-color var(--t-fast) var(--ease), transform var(--t-fast) var(--ease), background var(--t-fast) var(--ease);
+min-height: 52px;
+}
+.contact-action:hover {
+transform: translateY(-3px);
+}
+.contact-action__icon {
+width: 44px;
+height: 44px;
+flex-shrink: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: var(--radius-sm);
+}
+.contact-action--whatsapp .contact-action__icon {
+background: rgba(37, 211, 102, .12);
+color: var(--whatsapp);
+}
+.contact-action--whatsapp:hover {
+border-color: rgba(37, 211, 102, .45);
+}
+.contact-action--email .contact-action__icon {
+background: var(--gold-dim);
+color: var(--gold);
+}
+.contact-action--email:hover {
+border-color: var(--gold-line);
+}
+.contact-action__copy {
+display: flex;
+flex-direction: column;
+gap: 2px;
+flex: 1;
+}
+.contact-action__label {
+font-weight: 600;
+font-size: .98rem;
+}
+.contact-action__sub {
+font-size: .8rem;
+color: var(--white-faint);
+}
+.contact-action__arrow {
+color: var(--white-faint);
+transition: transform var(--t-fast) var(--ease);
+}
+.contact-action:hover .contact-action__arrow {
+transform: translateX(4px);
+color: var(--gold);
+}
+
+.contact-meta {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 16px;
+margin-top: 10px;
+padding-top: 24px;
+border-top: 1px solid var(--charcoal-700);
+}
+.contact-meta__item {
+display: flex;
+flex-direction: column;
+gap: 5px;
+}
+.contact-meta__label {
+font-family: var(--font-mono);
+font-size: .7rem;
+text-transform: uppercase;
+letter-spacing: .08em;
+color: var(--white-faint);
+}
+.contact-meta__value {
+font-size: .88rem;
+}
+
+/* Custom Interactive Contact Form */
+.contact-form-wrap {
+background: var(--charcoal-850);
+border: 1px solid var(--charcoal-700);
+border-radius: var(--radius-lg);
+padding: 40px;
+}
+.form-row {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 20px;
+}
+.form-field {
+display: flex;
+flex-direction: column;
+gap: 8px;
+margin-bottom: 20px;
+}
+.form-field label {
+font-size: .82rem;
+font-weight: 600;
+color: var(--white-dim);
+}
+.form-field input, .form-field textarea {
+background: var(--charcoal-900);
+border: 1px solid var(--charcoal-700);
+border-radius: var(--radius-sm);
+padding: 13px 15px;
+font-size: .94rem;
+color: var(--white);
+transition: border-color var(--t-fast) var(--ease), box-shadow var(--t-fast) var(--ease);
+resize: vertical;
+min-height: 48px;
+}
+.form-field input::placeholder, .form-field textarea::placeholder {
+color: var(--white-faint);
+}
+.form-field input:focus, .form-field textarea:focus {
+outline: none;
+border-color: var(--gold);
+box-shadow: 0 0 0 3px var(--gold-dim);
+}
+.form-field.has-error input, .form-field.has-error textarea {
+border-color: var(--error);
+}
+.form-field.has-error input:focus, .form-field.has-error textarea:focus {
+box-shadow: 0 0 0 3px rgba(229, 99, 91, .18);
+}
+.form-error {
+font-size: .78rem;
+color: var(--error);
+min-height: 1.2em;
+display: block;
+}
+
+.contact-form__alt {
+text-align: center;
+font-size: .85rem;
+color: var(--white-faint);
+margin-top: 18px;
+}
+.contact-form__alt a {
+color: var(--gold);
+font-weight: 600;
+display: inline-block;
+padding: 6px 0;
+}
+.contact-form__alt a:hover {
+text-decoration: underline;
+}
+
+/* ---------- Pop up Alert HUD ---------- */
+.toast {
+position: fixed;
+top: 24px;
+right: 24px;
+z-index: 500;
+display: flex;
+align-items: flex-start;
+gap: 14px;
+width: min(380px, calc(100vw - 48px));
+background: var(--charcoal-850);
+border: 1px solid var(--charcoal-700);
+border-left: 3px solid var(--success);
+border-radius: var(--radius-md);
+padding: 18px;
+box-shadow: 0 24px 48px -16px rgba(0, 0, 0, .55);
+transform: translateX(calc(100% + 40px));
+opacity: 0;
+transition: transform var(--t-med) var(--ease), opacity var(--t-med) var(--ease);
+}
+.toast.is-visible {
+transform: translateX(0);
+opacity: 1;
+}
+.toast.is-error {
+border-left-color: var(--error);
+}
+.toast__icon {
+width: 22px;
+height: 22px;
+flex-shrink: 0;
+margin-top: 1px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.toast__title {
+font-weight: 700;
+font-size: .92rem;
+}
+.toast__message {
+font-size: .84rem;
+color: var(--white-dim);
+margin-top: 3px;
+}
+.toast__close {
+margin-left: auto;
+font-size: 1.5rem;
+line-height: 1;
+color: var(--white-faint);
+padding: 8px;
+}
+.toast__close:hover {
+color: var(--white);
+}
+
+/* ---------- Layout Footer Area ---------- */
+.site-footer {
+border-top: 1px solid var(--charcoal-700);
+padding: 56px 0 36px;
+}
+.site-footer__inner {
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: space-between;
+gap: 24px;
+}
+.site-footer__brand {
+display: flex;
+flex-direction: column;
+gap: 6px;
+}
+.site-footer__tagline {
+font-size: .85rem;
+color: var(--white-faint);
+}
+.site-footer__nav {
+display: flex;
+gap: 26px;
+}
+.site-footer__nav a {
+font-size: .88rem;
+color: var(--white-dim);
+transition: color var(--t-fast) var(--ease);
+display: inline-block;
+padding: 8px 0;
+}
+.site-footer__nav a:hover {
+color: var(--gold);
+}
+.site-footer__copy {
+width: 100%;
+text-align: center;
+font-size: .78rem;
+color: var(--white-faint);
+margin-top: 24px;
+padding-top: 24px;
+border-top: 1px solid var(--charcoal-800);
+}
+
+/* ---------- Back To Top ---------- */
+.back-to-top {
+position: fixed;
+bottom: 28px;
+right: 28px;
+width: 48px;
+height: 48px;
+display: flex;
+align-items: center;
+justify-content: center;
+background: var(--gold);
+color: var(--charcoal-950);
+border-radius: 50%;
+box-shadow: 0 12px 28px -10px rgba(0, 0, 0, .55);
+opacity: 0;
+visibility: hidden;
+transform: translateY(12px);
+transition: opacity var(--t-fast) var(--ease), transform var(--t-fast) var(--ease), visibility var(--t-fast);
+z-index: 150;
+}
+.back-to-top.is-visible {
+opacity: 1;
+visibility: visible;
+transform: translateY(0);
+}
+.back-to-top:hover {
+background: var(--gold-bright);
+}
+
+/* =========================================================================
+MEDIA QUERIES (Adaptive Responsive Viewports)
+========================================================================= */
+
+@media (max-width: 1080px) {
+.hero__inner { grid-template-columns: 1fr; }
+.hero__visual { order: -1; margin-bottom: 24px; min-height: 340px; }
+.floating-card--role { right: 2%; }
+.floating-card--location { left: 2%; }
+.contact-grid { grid-template-columns: 1fr; }
+.founder-grid { grid-template-columns: 1fr; }
+.careers-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 860px) {
+.expertise-grid { grid-template-columns: repeat(2, 1fr); }
+.hero__stats { grid-template-columns: repeat(2, auto); row-gap: 28px; }
+.articles-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 760px) {
+.main-nav {
+position: fixed;
+top: var(--header-h);
+left: 0;
+right: 0;
+background: var(--charcoal-950);
+border-bottom: 1px solid var(--charcoal-700);
+max-height: 0;
+overflow: hidden;
+transition: max-height var(--t-med) var(--ease);
+}
+.main-nav.is-open {
+max-height: 380px;
+}
+.main-nav__list {
+flex-direction: column;
+align-items: flex-start;
+gap: 0;
+padding: 8px 32px 20px;
+}
+.main-nav__list li {
+width: 100%;
+}
+.main-nav__link {
+display: block;
+padding: 14px 0;
+width: 100%;
+}
+.site-header__actions .btn {
+display: none;
+}
+.nav-toggle {
+display: flex;
+}
+
+.section { padding: 88px 0; }
+.hero { padding-top: calc(var(--header-h) + 56px); }
+.expertise-grid { grid-template-columns: 1fr; }
+.articles-grid { grid-template-columns: 1fr; }
+.form-row { grid-template-columns: 1fr; }
+.contact-form-wrap { padding: 28px 22px; }
+.contact-meta { grid-template-columns: 1fr; }
+.toast { left: 16px; right: 16px; width: auto; }
+}
+
+@media (max-width: 520px) {
+.container { padding-inline: 20px; }
+.hero__cta { flex-direction: column; align-items: stretch; }
+.hero__stats { grid-template-columns: 1fr 1fr; }
+.avatar-frame { width: 240px; height: 240px; }
+.floating-card { padding: 10px 14px; }
+.floating-card--role { top: 4%; right: 0; }
+.floating-card--location { bottom: 2%; left: 0; }
+.back-to-top { bottom: 18px; right: 18px; width: 42px; height: 42px; }
+}
+/* =========================================================================
+   ENHANCEMENTS — Logo, Intro Animation, Light/Dark Theme
+   ========================================================================= */
+
+/* ===== LIGHT THEME VARIABLES ===== */
+body.light-theme {
+  --charcoal-950: #f8f8f6;
+  --charcoal-900: #f0efeb;
+  --charcoal-850: #e8e7e3;
+  --charcoal-800: #dddcda;
+  --charcoal-700: #c8c7c4;
+  --charcoal-600: #a8a7a4;
+  --white: #1a1a1a;
+  --white-dim: #3a3a3a;
+  --white-faint: #666666;
+  --gold: #b8922a;
+  --gold-bright: #c9a848;
+  --gold-dim: rgba(184, 146, 42, .12);
+  --gold-line: rgba(184, 146, 42, .35);
+  background: #f8f8f6;
+  color: #1a1a1a;
+}
+
+body.light-theme .site-header.is-scrolled {
+  background: rgba(248, 248, 246, 0.88);
+  border-bottom-color: var(--charcoal-700);
+}
+
+body.light-theme .hero__grid-bg {
+  background-image: linear-gradient(#d0d0cc 1px, transparent 1px),
+    linear-gradient(90deg, #d0d0cc 1px, transparent 1px);
+  opacity: 0.35;
+}
+
+body.light-theme .main-nav {
+  background: #f8f8f6;
+}
+
+body.light-theme .avatar-frame {
+  background: radial-gradient(circle at 50% 40%, #e8e7e3, #dddcda);
+}
+
+body.light-theme .floating-card,
+body.light-theme .contact-action,
+body.light-theme .contact-form-wrap,
+body.light-theme .founder-card,
+body.light-theme .careers-form-wrap,
+body.light-theme .article-card {
+  background: #ffffff;
+  border-color: var(--charcoal-700);
+}
+
+body.light-theme .form-field input,
+body.light-theme .form-field textarea {
+  background: #f0efeb;
+  border-color: var(--charcoal-700);
+  color: #1a1a1a;
+}
+
+body.light-theme .expertise-card {
+  background: #f0efeb;
+}
+
+body.light-theme .expertise-card:hover {
+  background: #e8e7e3;
+}
+
+body.light-theme .expertise-grid {
+  background: var(--charcoal-700);
+  border-color: var(--charcoal-700);
+}
+
+body.light-theme .toast {
+  background: #ffffff;
+  border-color: var(--charcoal-700);
+}
+
+body.light-theme .avatar-frame__badge {
+  background: #f0efeb;
+  border-color: var(--charcoal-700);
+}
+
+body.light-theme .quote-banner {
+  background: #f0efeb;
+  border-color: var(--charcoal-700);
+}
+
+body.light-theme .section--alt {
+  background: #f0efeb;
+}
+
+body.light-theme .site-footer {
+  background: #f0efeb;
+  border-top-color: var(--charcoal-700);
+}
+
+body.light-theme .btn--outline {
+  border-color: var(--charcoal-600);
+  color: var(--white);
+}
+
+/* ===== THEME TOGGLE BUTTON ===== */
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--charcoal-600);
+  background: transparent;
+  color: var(--white-dim);
+  cursor: pointer;
+  transition: background var(--t-fast) var(--ease), color var(--t-fast) var(--ease), border-color var(--t-fast) var(--ease), transform var(--t-fast) var(--ease);
+  flex-shrink: 0;
+}
+.theme-toggle:hover {
+  background: var(--gold-dim);
+  color: var(--gold);
+  border-color: var(--gold-line);
+  transform: rotate(15deg);
+}
+.theme-toggle svg {
+  width: 18px;
+  height: 18px;
+}
+.theme-toggle .icon-moon { display: block; }
+.theme-toggle .icon-sun  { display: none; }
+body.light-theme .theme-toggle .icon-moon { display: none; }
+body.light-theme .theme-toggle .icon-sun  { display: block; }
+
+/* ===== LOGO IN HEADER ===== */
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: -0.01em;
+}
+.logo__img {
+  height: 44px;
+  width: 44px;
+  object-fit: contain;
+  border-radius: 8px;
+  flex-shrink: 0;
+  transition: transform var(--t-fast) var(--ease);
+}
+.logo:hover .logo__img {
+  transform: scale(1.05) rotate(-3deg);
+}
+.logo__text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+.logo__name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--white);
+  letter-spacing: 0.02em;
+}
+.logo__tagline {
+  font-size: 0.6rem;
+  color: var(--gold);
+  font-family: var(--font-mono);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* Footer logo */
+.site-footer .logo__img {
+  height: 36px;
+  width: 36px;
+}
+.site-footer .logo__name {
+  font-size: 0.9rem;
+}
+
+/* ===== INTRO ANIMATION LOADER ===== */
+.intro-loader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--charcoal-950);
+  overflow: hidden;
+  pointer-events: all;
+}
+.intro-loader.hidden {
+  pointer-events: none;
+  animation: loaderFadeOut 0.6s cubic-bezier(.4,0,.2,1) forwards;
+}
+@keyframes loaderFadeOut {
+  0%   { opacity: 1; transform: scale(1); }
+  100% { opacity: 0; transform: scale(1.04); }
+}
+
+.intro-loader__bg {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(var(--charcoal-800) 1px, transparent 1px),
+    linear-gradient(90deg, var(--charcoal-800) 1px, transparent 1px);
+  background-size: 64px 64px;
+  opacity: 0.4;
+  animation: loaderBgFade 2.5s ease forwards;
+}
+@keyframes loaderBgFade {
+  0%   { opacity: 0; }
+  100% { opacity: 0.4; }
+}
+
+.intro-loader__glow {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(201,169,97,0.18) 0%, transparent 70%);
+  animation: glowPulse 2s ease-in-out infinite;
+}
+@keyframes glowPulse {
+  0%, 100% { transform: scale(1); opacity: 0.7; }
+  50%       { transform: scale(1.15); opacity: 1; }
+}
+
+.intro-loader__logo-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  animation: logoEntrance 0.9s cubic-bezier(.34,1.56,.64,1) forwards;
+  opacity: 0;
+  animation-delay: 0.2s;
+}
+@keyframes logoEntrance {
+  0%   { opacity: 0; transform: scale(0.6) translateY(20px); }
+  100% { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.intro-loader__logo-ring {
+  position: absolute;
+  inset: -20px;
+  border-radius: 50%;
+  border: 1px solid var(--gold-line);
+  animation: ringExpand 1.8s ease-out infinite;
+  opacity: 0;
+}
+.intro-loader__logo-ring:nth-child(2) { animation-delay: 0.6s; }
+.intro-loader__logo-ring:nth-child(3) { animation-delay: 1.2s; }
+@keyframes ringExpand {
+  0%   { transform: scale(0.6); opacity: 0.8; }
+  100% { transform: scale(2.2); opacity: 0; }
+}
+
+.intro-loader__logo-img {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+  border-radius: 16px;
+  position: relative;
+  z-index: 2;
+  filter: drop-shadow(0 0 32px rgba(201,169,97,0.45));
+}
+
+.intro-loader__brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+.intro-loader__name {
+  font-family: var(--font-display);
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: var(--white);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  animation: textSlide 0.8s cubic-bezier(.34,1.2,.64,1) forwards;
+  opacity: 0;
+  animation-delay: 0.55s;
+}
+@keyframes textSlide {
+  0%   { opacity: 0; transform: translateY(10px); letter-spacing: 0.2em; }
+  100% { opacity: 1; transform: translateY(0);    letter-spacing: 0.08em; }
+}
+.intro-loader__sub {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--gold);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  animation: textSlide 0.8s cubic-bezier(.34,1.2,.64,1) forwards;
+  opacity: 0;
+  animation-delay: 0.75s;
+}
+
+.intro-loader__bar-wrap {
+  width: 160px;
+  height: 2px;
+  background: var(--charcoal-700);
+  border-radius: 99px;
+  overflow: hidden;
+  margin-top: 8px;
+  animation: barAppear 0.4s ease forwards;
+  opacity: 0;
+  animation-delay: 0.9s;
+}
+@keyframes barAppear {
+  to { opacity: 1; }
+}
+.intro-loader__bar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, var(--gold), var(--gold-bright));
+  border-radius: 99px;
+  animation: barFill 1.4s cubic-bezier(.4,0,.2,1) forwards;
+  animation-delay: 1s;
+}
+@keyframes barFill {
+  0%   { width: 0%; }
+  100% { width: 100%; }
+}
+
+/* Prevent body scroll during intro */
+body.intro-loading {
+  overflow: hidden;
+}
+
+
+/* =========================================================================
+   SOCIAL LINKS — Footer
+   ========================================================================= */
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.footer-social__label {
+  font-family: var(--font-mono);
+  font-size: .68rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--white-faint);
+}
+.footer-social__icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: var(--charcoal-800);
+  border: 1px solid var(--charcoal-700);
+  color: var(--white-dim);
+  transition: transform var(--t-fast) var(--ease),
+              background var(--t-fast) var(--ease),
+              color var(--t-fast) var(--ease),
+              border-color var(--t-fast) var(--ease),
+              box-shadow var(--t-fast) var(--ease);
+}
+.social-icon svg {
+  width: 18px;
+  height: 18px;
+}
+.social-icon:hover {
+  transform: translateY(-3px);
+}
+/* Per-platform accent colours on hover */
+.social-icon--instagram:hover {
+  background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  border-color: transparent;
+  color: #fff;
+  box-shadow: 0 8px 20px -6px rgba(220,39,67,.45);
+}
+.social-icon--linkedin:hover {
+  background: #0077b5;
+  border-color: transparent;
+  color: #fff;
+  box-shadow: 0 8px 20px -6px rgba(0,119,181,.45);
+}
+.social-icon--threads:hover {
+  background: #1a1a1a;
+  border-color: transparent;
+  color: #fff;
+  box-shadow: 0 8px 20px -6px rgba(0,0,0,.45);
+}
+body.light-theme .social-icon--threads:hover {
+  background: #111;
+}
+.social-icon--facebook:hover {
+  background: #1877f2;
+  border-color: transparent;
+  color: #fff;
+  box-shadow: 0 8px 20px -6px rgba(24,119,242,.45);
+}
+
+/* =========================================================================
+   FOUNDER PROFILE PHOTO — Circle Frame
+   ========================================================================= */
+.founder-name-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 0;
+}
+.founder-name-text {
+  flex: 1;
+  min-width: 0;
+}
+/* Override original margins so spacing still looks right */
+.founder-name-row .founder-name {
+  margin-bottom: 4px;
+}
+
+.founder-avatar {
+  position: relative;
+  width: 88px;
+  height: 88px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid var(--gold-line);
+  box-shadow: 0 0 0 4px var(--gold-dim), 0 8px 24px -8px rgba(0,0,0,.5);
+  background: var(--charcoal-800);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow var(--t-med) var(--ease), transform var(--t-med) var(--ease);
+}
+.founder-avatar:hover {
+  box-shadow: 0 0 0 6px var(--gold-dim), 0 12px 30px -8px rgba(201,169,97,.35);
+  transform: scale(1.04);
+}
+/* Actual photo — shown when src is set */
+.founder-avatar__photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+/* Placeholder SVG fills frame when no photo */
+.founder-avatar__placeholder {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+/* Initials badge centred over placeholder */
+.founder-avatar__initials {
+  position: absolute;
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--gold);
+  letter-spacing: .04em;
+  pointer-events: none;
+  z-index: 2;
+}
+/* Gold spinning ring animation */
+.founder-avatar::after {
+  content: '';
+  position: absolute;
+  inset: -3px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  border-top-color: var(--gold);
+  animation: avatarSpin 4s linear infinite;
+  opacity: 0.5;
+}
+@keyframes avatarSpin {
+  to { transform: rotate(360deg); }
+}
+
+/* ── Responsive: stack avatar below name on very small screens ── */
+@media (max-width: 520px) {
+  .founder-name-row {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  .founder-avatar {
+    width: 72px;
+    height: 72px;
+  }
+}
+
+</style>
+</head>
+<body class="intro-loading">
+
+<!-- ============ INTRO ANIMATION LOADER ============ -->
+<div class="intro-loader" id="introLoader" aria-hidden="true">
+  <div class="intro-loader__bg"></div>
+  <div class="intro-loader__glow"></div>
+  <div class="intro-loader__logo-wrap">
+    <div class="intro-loader__logo-ring"></div>
+    <div class="intro-loader__logo-ring"></div>
+    <div class="intro-loader__logo-ring"></div>
+    <img class="intro-loader__logo-img" src="js/asimage.jpg" alt="ABRAJ Solutions">
+    <div class="intro-loader__brand">
+      <span class="intro-loader__name">ABRAJ SOLUTIONS</span>
+      <span class="intro-loader__sub">Health &amp; Life Insurance Guidance</span>
+      <div class="intro-loader__bar-wrap">
+        <div class="intro-loader__bar"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ============ SKIP LINK ============ -->
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ TOAST NOTIFICATION ============ -->
+<div class="toast" id="toast" role="status" aria-live="polite">
+  <span class="toast__icon" id="toastIcon"></span>
+  <div class="toast__text">
+    <p class="toast__title" id="toastTitle">Title</p>
+    <p class="toast__message" id="toastMessage">Message</p>
+  </div>
+  <button class="toast__close" id="toastClose" aria-label="Dismiss notification">&times;</button>
+</div>
+
+<!-- ============ HEADER / NAV ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="container site-header__inner">
+    <a href="#home" class="logo">
+      <img class="logo__img" src="js/asimage.jpg" alt="ABRAJ Solutions Logo">
+      <span class="logo__text">
+        <span class="logo__name">ABRAJ SOLUTIONS</span>
+        <span class="logo__tagline">Health &amp; Life Insurance</span>
+      </span>
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Primary">
+      <ul class="main-nav__list">
+        <li><a href="#home" class="main-nav__link active-link" data-nav>Home</a></li>
+        <li><a href="#founder" class="main-nav__link" data-nav>About Us</a></li>
+        <li><a href="#health-insurance" class="main-nav__link" data-nav>Health Plans</a></li>
+        <li><a href="#life-insurance" class="main-nav__link" data-nav>Life Plans</a></li>
+        <li><a href="#education" class="main-nav__link" data-nav>Learning</a></li>
+        <li><a href="#careers" class="main-nav__link" data-nav>Careers</a></li>
+        <li><a href="#contact" class="main-nav__link" data-nav>Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="site-header__actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark theme" title="Toggle theme">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
+      <a href="#contact" class="btn btn--gold btn--sm">Free Consultation</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="hero__grid-bg" aria-hidden="true"></div>
+    <div class="container hero__inner">
+
+      <div class="hero__content">
+        <p class="eyebrow">
+          <span class="eyebrow__dot"></span>
+          Protect Today. Secure Tomorrow.
+        </p>
+
+        <h1 class="hero__title">
+          Creating Awareness. <br>Building Trust. Protecting <span class="text-gold">Futures.</span>
+        </h1>
+
+        <p class="hero__subtitle">
+          Helping Individuals, Families &amp; Businesses make informed Health and Life Insurance decisions with transparent advisement.
+        </p>
+
+        <div class="hero__cta">
+          <a href="#contact" class="btn btn--gold btn--lg">
+            Plan Your Security
+            <svg class="btn__icon" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#health-insurance" class="btn btn--outline btn--lg">Explore Plans</a>
+        </div>
+
+        <dl class="hero__stats">
+          <div class="hero__stat">
+            <dt class="hero__stat-value" data-count-to="4" data-suffix="+">0</dt>
+            <dd class="hero__stat-label">Years Advisor Experience</dd>
+          </div>
+          <div class="hero__stat">
+            <dt class="hero__stat-value" data-count-to="500" data-suffix="+">0</dt>
+            <dd class="hero__stat-label">Families Protected</dd>
+          </div>
+          <div class="hero__stat">
+            <dt class="hero__stat-value" data-count-to="99" data-suffix="%">0</dt>
+            <dd class="hero__stat-label">Claim Assistance Ratio</dd>
+          </div>
+          <div class="hero__stat">
+            <dt class="hero__stat-value" data-count-to="10" data-suffix="+">0</dt>
+            <dd class="hero__stat-label">Corporate Partners</dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="hero__visual">
+        <div class="avatar-frame">
+          <div class="avatar-frame__corner avatar-frame__corner--tl"></div>
+          <div class="avatar-frame__corner avatar-frame__corner--tr"></div>
+          <div class="avatar-frame__corner avatar-frame__corner--bl"></div>
+          <div class="avatar-frame__corner avatar-frame__corner--br"></div>
+
+          <svg class="avatar-frame__monogram" viewBox="0 0 240 240" aria-hidden="true">
+            <circle cx="120" cy="120" r="118" stroke="currentColor" stroke-width="1" opacity="0.15"/>
+            <circle cx="120" cy="120" r="96" stroke="currentColor" stroke-width="1" opacity="0.25"/>
+            <text x="120" y="142" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-size="72" font-weight="600" fill="currentColor">AS</text>
+          </svg>
+
+          <span class="avatar-frame__badge">
+            <span class="avatar-frame__badge-dot"></span>
+            IRDAI Registered Advisory
+          </span>
+        </div>
+
+        <div class="floating-card floating-card--role">
+          <span class="floating-card__label">Our Philosophy</span>
+          <span class="floating-card__value">Client-First Framework</span>
+        </div>
+
+        <div class="floating-card floating-card--location">
+          <span class="floating-card__label">Active Region</span>
+          <span class="floating-card__value">Andhra Pradesh &amp; Telangana</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ FOUNDER INTERSECTION BANNER ============ -->
+  <section class="quote-banner">
+    <div class="container">
+      <blockquote class="quotation-card">
+        <p class="quotation-card__text">
+          "Insurance is not about selling policies. It's about helping families stay financially secure when life is uncertain."
+        </p>
+        <cite class="quotation-card__author">— ABRAJ SOLUTIONS</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT FOUNDER ============ -->
+  <section class="section section--alt" id="founder">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Leadership</p>
+        <h2 class="section-title">About Our Founder</h2>
+        <p class="section-subtitle">
+          Driven by global standards of quality analysis and client financial wellness.
+        </p>
+      </div>
+
+      <div class="founder-grid">
+        <div class="founder-card">
+          <span class="founder-card__badge">Management</span>
+          <div class="founder-name-row">
+            <div class="founder-name-text">
+              <h3 class="founder-name">SAI TEJA GANDEPALLI</h3>
+              <p class="founder-role">Founder, ABRAJ Solutions</p>
+            </div>
+            <div class="founder-avatar" aria-label="Sai Teja Gandepalli - Founder Photo">
+              <!-- REPLACE src below with the founder's actual photo URL or base64 -->
+              <img class="founder-avatar__photo" src="js\image.png" alt="Sai Teja ">
+            </div>
+          </div>
+          
+          <div class="founder-bio">
+            <p>
+              With a background rooted in absolute precision, Sai Teja brings analytical discipline from the pharmaceutical sector over to the core financial framework.
+            </p>
+          </div>
+
+          <div class="founder-metrics">
+            <div class="founder-metric">
+              <span class="metric-num">4+ Years</span>
+              <span class="metric-desc">Health &amp; Life Insurance Industry experience</span>
+            </div>
+            <div class="founder-metric">
+              <span class="metric-num">3 Years</span>
+              <span class="metric-desc">Pharmaceutical Quality Assurance experience</span>
+            </div>
+            <div class="founder-metric">
+              <span class="metric-num">Sales Manager</span>
+              <span class="metric-desc">Direct corporate operations expertise</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="founder-mission">
+          <h4 class="mission-title">Our Mission Directive</h4>
+          <p class="mission-text">
+            To make financial protection straightforward and clear for everyone. We design pathways that focus on <strong>Insurance Awareness</strong> and <strong>Financial Protection</strong>, making sure you buy precisely what you need, with no hidden clauses or unexpected surprises.
+          </p>
+          <ul class="mission-list">
+            <li>✔ Clear explanations of all options</li>
+            <li>✔ Structured claim settlement assistance</li>
+            <li>✔ Regular reviews of your coverage limits</li>
+            <li>✔ Custom protection strategies for business assets</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HEALTH INSURANCE ============ -->
+  <section class="section" id="health-insurance">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Medical Protection</p>
+        <h2 class="section-title">❤️ Health Insurance Solutions</h2>
+        <p class="section-subtitle">
+          Ensure premium emergency funding and cash-free medical network access during unexpected medical episodes.
+        </p>
+      </div>
+
+      <div class="expertise-grid">
+
+        <article class="expertise-card">
+          <div class="expertise-card__icon">
+            <span class="text-gold" style="font-size:1.8rem; font-weight:bold;">?</span>
+          </div>
+          <h3 class="expertise-card__title">Why Health Insurance?</h3>
+          <p class="expertise-card__text">Protects your hard-earned life savings from inflating healthcare prices, room charges, and sudden surgical costs.</p>
+        </article>
+
+        <article class="expertise-card">
+          <div class="expertise-card__icon">
+            <span class="text-gold" style="font-size:1.8rem; font-weight:bold;">1</span>
+          </div>
+          <h3 class="expertise-card__title">Individual Plans</h3>
+          <p class="expertise-card__text">Fully customizable sum insured allocations suited specifically for standalone professionals and young adults.</p>
+        </article>
+
+        <article class="expertise-card">
+          <div class="expertise-card__icon">
+            <span class="text-gold" style="font-size:1.8rem; font-weight:bold;">👪</span>
+          </div>
+          <h3 class="expertise-card__title">Family Floater Plans</h3>
+          <p class="expertise-card__text">A single, highly optimized umbrella cover sharing security across spouse, children, and parents efficiently.</p>
+        </article>
+
+        <article class="expertise-card">
+          <div class="expertise-card__icon">
+            <span class="text-gold" style="font-size:1.8rem; font-weight:bold;">👵</span>
+          </div>
+          <h3 class="expertise-card__title">Senior Citizen Plans</h3>
+          <p class="expertise-card__text">Designed for parents aged 60+, managing pre-existing illnesses with specialized medical network pathways.</p>
+        </article>
+
+        <article class="expertise-card">
+          <div class="expertise-card__icon">
+            <span class="text-gold" style="font-size:1.8rem; font-weight:bold;">⇪</span>
+          </div>
+          <h3 class="expertise-card__title">Top-Up Plans</h3>
+          <p class="expertise-card__text">Add substantial deductible-linked covers to your existing policy at a fraction of standard base policy premiums.</p>
+        </article>
+
+        <article class="expertise-card">
+          <div class="expertise-card__icon">
+            <span class="text-gold" style="font-size:1.8rem; font-weight:bold;">✔</span>
+          </div>
+          <h3 class="expertise-card__title">Claim Guidance</h3>
+          <p class="expertise-card__text">Step-by-step assistance to make sure your hospital pre-authorizations and reimbursements go through smoothly.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LIFE INSURANCE ============ -->
+  <section class="section section--alt" id="life-insurance">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Financial Legacies</p>
+        <h2 class="section-title">🛡️ Life Insurance Frameworks</h2>
+        <p class="section-subtitle">
+          Secure your dependents, create tax-exempt capital portfolios, and guarantee your children's development timelines.
+        </p>
+      </div>
+
+      <div class="expertise-grid">
+
+        <article class="expertise-card">
+          <div class="expertise-card__icon">
+            <span class="text-gold" style="font-size:1.8rem; font-weight:bold;">⚖</span>
+          </div>
+          <h3 class="expertise-card__title">Term Insurance</h3>
+          <p class="expertise-card__text">Pure high-value life protection securing high financial coverages for your family at extremely affordable premiums.</p>
+        </article>
+
+        <article class="expertise-card">
+          <div class="expertise-card__icon">
+            <span class="text-gold" style="font-size:1.8rem; font-weight:bold;">🎓</span>
+          </div>
+          <h3 class="expertise-card__title">Child Education Planning</h3>
+          <p class="expertise-card__text">Guaranteed cash payout structures aligned with your children's higher education admission milestones.</p>
+        </article>
+
+        <article class="expertise-card">
+          <div class="expertise-card__icon">
+            <span class="text-gold" style="font-size:1.8rem; font-weight:bold;">🏝</span>
+          </div>
+          <h3 class="expertise-card__title">Retirement Planning</h3>
+          <p class="expertise-card__text">Ensures a reliable monthly income flow for life, keeping you financially independent throughout retirement.</p>
+        </article>
+
+        <article class="expertise-card">
+          <div class="expertise-card__icon">
+            <span class="text-gold" style="font-size:1.8rem; font-weight:bold;">📈</span>
+          </div>
+          <h3 class="expertise-card__title">Wealth Creation</h3>
+          <p class="expertise-card__text">Participate in strategic market upside returns with tax-exempt insurance investment structures.</p>
+        </article>
+
+        <article class="expertise-card">
+          <div class="expertise-card__icon">
+            <span class="text-gold" style="font-size:1.8rem; font-weight:bold;">🔒</span>
+          </div>
+          <h3 class="expertise-card__title">Income Protection</h3>
+          <p class="expertise-card__text">Guarantees alternate income flow in case of sudden physical critical impairments or disability occurrences.</p>
+        </article>
+
+        <article class="expertise-card">
+          <div class="expertise-card__icon">
+            <span class="text-gold" style="font-size:1.8rem; font-weight:bold;">💡</span>
+          </div>
+          <h3 class="expertise-card__title">Education Awareness</h3>
+          <p class="expertise-card__text">Empowering clients with step-by-step masterclasses to demystify complex premium options.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EDUCATIONAL RESOURCES (ARTICLES) ============ -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Knowledge Center</p>
+        <h2 class="section-title">Insurance Insights &amp; Articles</h2>
+        <p class="section-subtitle">
+          Empowering you with basic facts, clarifying common myths, and guiding you through insurance policies.
+        </p>
+      </div>
+
+      <div class="articles-grid">
+
+        <article class="article-card">
+          <div class="article-card__meta">Health Insurance</div>
+          <h3 class="article-card__title">Why Buy Health Insurance Early?</h3>
+          <p class="article-card__text">Lock in much lower premiums, complete waiting periods when you are healthy, and enjoy cumulative bonuses for claim-free years.</p>
+        </article>
+
+        <article class="article-card">
+          <div class="article-card__meta">Myth Busters</div>
+          <h3 class="article-card__title">Health Insurance Myths Exposed</h3>
+          <p class="article-card__text">"Only older people need coverage" and "24-hour hospitalization is always required." We explain why these assumptions are incorrect.</p>
+        </article>
+
+        <article class="article-card">
+          <div class="article-card__meta">Analysis</div>
+          <h3 class="article-card__title">Employer Cover vs Personal Cover</h3>
+          <p class="article-card__text">Corporate coverage ends when you change jobs. We highlight why a separate personal policy is crucial for reliable long-term security.</p>
+        </article>
+
+        <article class="article-card">
+          <div class="article-card__meta">Guides</div>
+          <h3 class="article-card__title">How Claim Processes Work</h3>
+          <p class="article-card__text">A clear guide on cashless approvals vs reimbursement claims, detailing exactly what paperwork you need to collect.</p>
+        </article>
+
+        <article class="article-card">
+          <div class="article-card__meta">policy terms</div>
+          <h3 class="article-card__title">Waiting Periods Decoded</h3>
+          <p class="article-card__text">An easy guide to standard pre-existing disease (PED) waiting timelines, 30-day initial rules, and specific disease clauses.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CAREERS / JOIN US ============ -->
+  <section class="section section--alt" id="careers">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Join Our Mission</p>
+        <h2 class="section-title">Careers at ABRAJ Solutions</h2>
+        <p class="section-subtitle">
+          Looking for a career in Insurance? We build professional teams with structured mentoring.
+        </p>
+      </div>
+
+      <div class="careers-grid">
+        <div class="careers-content">
+          <h3 class="careers-lead-title">Become a Professional Financial Advisor</h3>
+          <p class="careers-lead-text">
+            Join a growing network dedicated to making insurance clear and accessible. We offer extensive training, helping you build a stable and meaningful advisory career.
+          </p>
+
+          <div class="career-perks">
+            <div class="perk-item">
+              <h4 class="perk-title">👥 Advisor Opportunities</h4>
+              <p class="perk-desc">Flexible working frameworks designed to help you build a professional advisory business.</p>
+            </div>
+            <div class="perk-item">
+              <h4 class="perk-title">🚀 Team Building</h4>
+              <p class="perk-desc">Opportunities to step up and lead regional advisory teams with our business support.</p>
+            </div>
+            <div class="perk-item">
+              <h4 class="perk-title">🎓 Training &amp; Mentorship</h4>
+              <p class="perk-desc">Learn direct sales management, IRDAI compliance guidelines, and claim management from our founder.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="careers-form-wrap">
+          <h3 class="careers-form-title">Join Our Team</h3>
+          <p class="careers-form-sub">Submit your details and we will schedule an orientation call with you.</p>
+
+          <form class="contact-form" id="careerForm" novalidate>
+            <div class="form-field">
+              <label for="careerName">Full Name</label>
+              <input type="text" id="careerName" placeholder="Enter your full name">
+              <span class="form-error" id="careerNameError"></span>
+            </div>
+
+            <div class="form-field">
+              <label for="careerMobile">Mobile Number</label>
+              <input type="tel" id="careerMobile" placeholder="e.g., +91 98765 43210">
+              <span class="form-error" id="careerMobileError"></span>
+            </div>
+
+            <div class="form-field">
+              <label for="careerEmail">Email Address</label>
+              <input type="email" id="careerEmail" placeholder="e.g., ramesh@gmail.com">
+              <span class="form-error" id="careerEmailError"></span>
+            </div>
+
+            <div class="form-field">
+              <label for="careerCity">City</label>
+              <input type="text" id="careerCity" placeholder="e.g., Vijayawada / Eluru">
+              <span class="form-error" id="careerCityError"></span>
+            </div>
+
+            <button type="submit" class="btn btn--gold btn--lg btn--full" id="careerSubmitBtn">
+              <span class="btn__text">Apply Now</span>
+              <span class="btn__spinner" aria-hidden="true"></span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Connect</p>
+        <h2 class="section-title">Schedule A Free consultation</h2>
+        <p class="section-subtitle">
+          Let’s sit down, review your existing policies, address your concerns, and design a reliable protection plan for your family.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- DIRECT CONTACT -->
+        <div class="contact-direct">
+
+          <a href="#" id="whatsappBtn" class="contact-action contact-action--whatsapp" target="_blank" rel="noopener">
+            <span class="contact-action__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.27-1.38a9.9 9.9 0 004.72 1.2h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm5.8 14.04c-.24.68-1.4 1.32-1.93 1.4-.5.08-1.13.11-1.82-.11-.42-.13-.96-.32-1.65-.62-2.9-1.25-4.8-4.17-4.94-4.36-.14-.2-1.18-1.57-1.18-3 0-1.42.75-2.12 1.01-2.4.27-.29.58-.36.78-.36.2 0 .39.002.56.01.18.01.42-.07.65.5.24.58.81 2 .88 2.15.07.14.12.31.02.5-.1.2-.15.31-.3.48-.14.17-.3.37-.43.5-.14.14-.29.29-.13.57.17.29.74 1.22 1.6 1.97 1.1.97 2.02 1.28 2.32 1.42.3.15.47.13.65-.07.17-.2.73-.85.93-1.14.2-.29.4-.24.66-.14.27.1 1.7.8 2 .94.29.15.48.22.55.34.07.13.07.74-.17 1.42z"/></svg>
+            </span>
+            <span class="contact-action__copy">
+              <span class="contact-action__label">Instant Chat on WhatsApp</span>
+              <span class="contact-action__sub">Replies within minutes</span>
+            </span>
+            <svg class="contact-action__arrow" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+
+          <a href="#" id="emailBtn" class="contact-action contact-action--email">
+            <span class="contact-action__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M3 6l9 7 9-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <span class="contact-action__copy">
+              <span class="contact-action__label">Send an Inquiry Email</span>
+              <span class="contact-action__sub" id="emailDisplay">saitejagandepalli8@gmail.com</span>
+            </span>
+            <svg class="contact-action__arrow" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+
+          <div class="contact-meta">
+            <div class="contact-meta__item">
+              <span class="contact-meta__label">Main Location</span>
+              <span class="contact-meta__value">Andhra Pradesh, India</span>
+            </div>
+            <div class="contact-meta__item">
+              <span class="contact-meta__label">Consultation Standard</span>
+              <span class="contact-meta__value">Zero Advisory Fees</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- SUBMISSION FORM -->
+        <div class="contact-form-wrap">
+          <form class="contact-form" id="contactForm" novalidate>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" placeholder="e.g. Ramesh Kumar" autocomplete="name">
+                <span class="form-error" id="fullNameError"></span>
+              </div>
+              <div class="form-field">
+                <label for="mobileNumber">Mobile Number</label>
+                <input type="tel" id="mobileNumber" name="mobileNumber" placeholder="e.g. 9876543210">
+                <span class="form-error" id="mobileNumberError"></span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="emailAddress">Email Address</label>
+                <input type="email" id="emailAddress" name="emailAddress" placeholder="e.g. ramesh@gmail.com" autocomplete="email">
+                <span class="form-error" id="emailAddressError"></span>
+              </div>
+              <div class="form-field">
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" placeholder="e.g. Vijayawada">
+                <span class="form-error" id="cityError"></span>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="message">Specific Policy Questions (Optional)</label>
+              <textarea id="message" name="message" rows="4" placeholder="Let us know what coverage amount you are targeting, family details, or questions about claims..."></textarea>
+              <span class="form-error" id="messageError"></span>
+            </div>
+
+            <button type="submit" class="btn btn--gold btn--lg btn--full" id="submitBtn">
+              <span class="btn__text">Book Free Consultation</span>
+              <span class="btn__spinner" aria-hidden="true"></span>
+            </button>
+
+            <p class="contact-form__alt">
+              Prefer simple chat rooms? <a href="#" id="formWhatsappLink">Pre-fill details via WhatsApp</a>.
+            </p>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container site-footer__inner">
+    <div class="site-footer__brand">
+      <a href="#home" class="logo">
+        <img class="logo__img" src="js/asimage.jpg" alt="ABRAJ Solutions Logo">
+        <span class="logo__text">
+          <span class="logo__name">ABRAJ</span>
+          <span class="logo__tagline">Solutions</span>
+        </span>
+      </a>
+      <p class="site-footer__tagline">Creating Awareness on Health &amp; Life Insurance.</p>
+    </div>
+
+    <nav class="site-footer__nav" aria-label="Footer">
+      <a href="#home">Home</a>
+      <a href="#founder">About Us</a>
+      <a href="#health-insurance">Health plans</a>
+      <a href="#life-insurance">Life plans</a>
+      <a href="#careers">Careers</a>
+    </nav>
+
+    <!-- SOCIAL LINKS -->
+    <div class="footer-social" aria-label="Social media profiles">
+      <span class="footer-social__label">Follow Us</span>
+      <div class="footer-social__icons">
+
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/abraj_insurance_solutions?utm_source=qr&igsh=MXVyYWJxbDNjOXc3aQ==" target="_blank" rel="noopener" class="social-icon social-icon--instagram" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/>
+          </svg>
+        </a>
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/teja-sai-103309251?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener" class="social-icon social-icon--linkedin" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
+            <circle cx="4" cy="4" r="2"/>
+          </svg>
+        </a>
+
+        <!-- Threads -->
+        <a href="https://www.threads.com/@abraj_insurance_solutions" target="_blank" rel="noopener" class="social-icon social-icon--threads" aria-label="Threads">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12.186 24h-.007c-3.581-.024-6.334-1.205-8.184-3.509C2.35 18.44 1.5 15.586 1.474 12.01v-.017c.025-3.578.875-6.43 2.521-8.482C5.845 1.205 8.6.024 12.18 0h.014c2.746.02 5.043.818 6.827 2.37 1.677 1.461 2.854 3.57 3.494 6.255l-2.044.479c-.995-4.216-3.414-6.557-8.275-6.59-3.007.02-5.266.966-6.714 2.813C4.157 7.025 3.471 9.3 3.448 12.01c.023 2.71.71 4.985 2.039 6.683 1.449 1.849 3.71 2.795 6.72 2.814 2.732-.017 4.54-.73 5.904-2.368.937-1.122 1.531-2.7 1.765-4.692-.966.326-2.003.483-3.06.44-2.573-.1-4.64-.985-5.987-2.542-1.264-1.464-1.863-3.396-1.722-5.6.293-4.477 3.432-6.945 7.734-6.732 3.025.148 5.032 1.397 5.966 3.713.45 1.12.646 2.412.583 3.84-.067 1.487-.358 2.773-.865 3.82.027.133.053.267.075.4.424 2.614-.08 4.815-1.503 6.385-1.584 1.745-4.054 2.656-7.152 2.639zm3.46-9.875c.09-.003.18-.006.27-.012 1.074-.074 2.073-.37 2.941-.871.01-.294.01-.59-.003-.888-.11-2.496-1.502-3.858-4.046-3.98-3.086-.148-5.04 1.47-5.245 4.598-.107 1.628.305 2.985 1.19 3.993.968 1.1 2.5 1.714 4.412 1.786a9.6 9.6 0 00.481-.026z"/>
+          </svg>
+        </a>
+
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/share/196Z48zZbk/" target="_blank" rel="noopener" class="social-icon social-icon--facebook" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+          </svg>
+        </a>
+
+      </div>
+    </div>
+
+    <p class="site-footer__copy">© <span id="currentYear">2026</span> ABRAJ SOLUTIONS. All rights reserved.</p>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <svg width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M8 13V3M3 7l5-5 5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>
+/* =========================================================================
+   ABRAJ SOLUTIONS — Core Engine
+   =========================================================================
+   Founder: Sai Teja Gandepalli
+   Primary Email: saitejagandepalli8@gmail.com
+   ========================================================================= */
+
+/* =========================================================================
+   BILLION PORTFOLIO — script.js
+   =========================================================================
+   Configured for: Sai Teja Gandepalli
+   Founder Contact updated to: +91 85003 52030
+   ========================================================================= */
+
+const CONFIG = {
+  // WhatsApp number in international format, digits only, no "+", no spaces.
+  // Updated to: 918500352030
+  whatsappNumber: "918500352030",
+  whatsappDefaultMessage: "Hi, I am interested in scheduling an insurance consultation with ABRAJ Solutions.",
+
+  // Contact email
+  email: "saitejagandepalli8@gmail.com",
+  emailSubject: "Inquiry - ABRAJ Solutions Protection Consultation",
+  emailBody: "Hi Sai Teja,\n\nI visited the ABRAJ Solutions portal and want to review our protection options:\n\n- Scope of Requirement (Health/Life): \n- Sum Insured targets: \n- Best time to contact me: \n",
+
+  // -----------------------------------------------------------------------
+  // EMAIL — EmailJS configuration
+  // -----------------------------------------------------------------------
+  formMode: "emailjs",
+
+  emailjs: {
+    publicKey: "9yEUlCDQc19rrReYy",
+    serviceId: "service_eiy6zkk",
+    templateId: "YOUR_EMAILJS_TEMPLATE_ID" // Please configure your actual Template ID here
+  },
+
+  // -----------------------------------------------------------------------
+  // WHATSAPP SECURE PROXY (Meta Cloud API Backend endpoint)
+  // -----------------------------------------------------------------------
+  whatsappApi: {
+    enabled: true,
+    notifyEndpoint: "http://localhost:5000/api/whatsapp-notify"
+  }
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+  initHeader();
+  initMobileNav();
+  initActiveNavOnScroll();
+  initScrollReveal();
+  initCountUp();
+  initDirectContactLinks();
+  initContactForm();
+  initBackToTop();
+  initToastClose();
+  
+  const yearElement = document.getElementById("currentYear");
+  if (yearElement) {
+    yearElement.textContent = new Date().getFullYear();
+  }
+});
+
+/* ---------------------------------------------------------------------
+   Header background change on scroll threshold
+--------------------------------------------------------------------- */
+function initHeader() {
+  const header = document.getElementById("siteHeader");
+  if (!header) return;
+  const toggle = () => {
+    header.classList.toggle("is-scrolled", window.scrollY > 12);
+  };
+  toggle();
+  window.addEventListener("scroll", toggle, { passive: true });
+}
+
+/* ---------------------------------------------------------------------
+   Mobile Navigation Menu handler
+--------------------------------------------------------------------- */
+function initMobileNav() {
+  const navToggle = document.getElementById("navToggle");
+  const mainNav = document.getElementById("mainNav");
+  if (!navToggle || !mainNav) return;
+
+  navToggle.addEventListener("click", () => {
+    const isOpen = mainNav.classList.toggle("is-open");
+    navToggle.classList.toggle("is-open", isOpen);
+    navToggle.setAttribute("aria-expanded", String(isOpen));
+  });
+
+  mainNav.querySelectorAll(".main-nav__link").forEach((link) => {
+    link.addEventListener("click", () => {
+      mainNav.classList.remove("is-open");
+      navToggle.classList.remove("is-open");
+      navToggle.setAttribute("aria-expanded", "false");
+    });
+  });
+}
+
+/* ---------------------------------------------------------------------
+   Active menu highlighting based on scrolling position
+--------------------------------------------------------------------- */
+function initActiveNavOnScroll() {
+  const sections = document.querySelectorAll("main section[id]");
+  const navLinks = document.querySelectorAll("[data-nav]");
+
+  if (!sections.length) return;
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        const id = entry.target.getAttribute("id");
+        navLinks.forEach((link) => {
+          link.classList.toggle("active-link", link.getAttribute("href") === `#${id}`);
+        });
+      });
+    },
+    { rootMargin: "-45% 0px -50% 0px", threshold: 0 }
+  );
+
+  sections.forEach((section) => observer.observe(section));
+}
+
+/* ---------------------------------------------------------------------
+   Scroll reveal animations
+--------------------------------------------------------------------- */
+function initScrollReveal() {
+  const targets = document.querySelectorAll(
+    ".expertise-card, .project-card, .timeline-item, .contact-action, .contact-form-wrap, .section-head"
+  );
+  targets.forEach((el) => el.classList.add("reveal"));
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.12 }
+  );
+
+  targets.forEach((el) => observer.observe(el));
+}
+
+/* ---------------------------------------------------------------------
+   Ease-out-cubic responsive metric counter animation
+--------------------------------------------------------------------- */
+function initCountUp() {
+  const stats = document.querySelectorAll("[data-count-to]");
+  if (!stats.length) return;
+
+  const animate = (el) => {
+    const target = parseFloat(el.dataset.countTo);
+    const prefix = el.dataset.prefix || "";
+    const suffix = el.dataset.suffix || "";
+    const duration = 1400;
+    const start = performance.now();
+
+    const tick = (now) => {
+      const progress = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3); // Ease-out-cubic
+      const value = (target % 1 === 0) 
+        ? Math.round(target * eased) 
+        : (target * eased).toFixed(1);
+      el.textContent = `${prefix}${value}${suffix}`;
+      if (progress < 1) requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  };
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          animate(entry.target);
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.6 }
+  );
+
+  stats.forEach((el) => observer.observe(el));
+}
+
+/* ---------------------------------------------------------------------
+   Formatting dynamic Mailto and WhatsApp links
+--------------------------------------------------------------------- */
+function buildWhatsappUrl(message) {
+  const text = encodeURIComponent(message || CONFIG.whatsappDefaultMessage);
+  return `https://wa.me/${CONFIG.whatsappNumber}?text=${text}`;
+}
+
+function buildMailtoUrl(subject, body) {
+  const params = new URLSearchParams({
+    subject: subject || CONFIG.emailSubject,
+    body: body || CONFIG.emailBody
+  });
+  const query = params.toString().replace(/\+/g, "%20");
+  return `mailto:${CONFIG.email}?${query}`;
+}
+
+function initDirectContactLinks() {
+  const whatsappBtn = document.getElementById("whatsappBtn");
+  const emailBtn = document.getElementById("emailBtn");
+  const emailDisplay = document.getElementById("emailDisplay");
+
+  if (whatsappBtn) whatsappBtn.setAttribute("href", buildWhatsappUrl());
+  if (emailBtn) emailBtn.setAttribute("href", buildMailtoUrl());
+  if (emailDisplay) emailDisplay.textContent = CONFIG.email;
+}
+
+/* ---------------------------------------------------------------------
+   Advanced validations and form management
+--------------------------------------------------------------------- */
+function initContactForm() {
+  const form = document.getElementById("contactForm");
+  const submitBtn = document.getElementById("submitBtn");
+  const formWhatsappLink = document.getElementById("formWhatsappLink");
+  if (!form || !submitBtn) return;
+
+  const fields = {
+    fullName: { el: document.getElementById("fullName"), errorEl: document.getElementById("fullNameError") },
+    emailAddress: { el: document.getElementById("emailAddress"), errorEl: document.getElementById("emailAddressError") },
+    subject: { el: document.getElementById("subject"), errorEl: document.getElementById("subjectError") },
+    message: { el: document.getElementById("message"), errorEl: document.getElementById("messageError") }
+  };
+
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  function setError(key, message) {
+    const fieldObj = fields[key];
+    if (!fieldObj || !fieldObj.el || !fieldObj.errorEl) return;
+    fieldObj.errorEl.textContent = message;
+    fieldObj.el.closest(".form-field").classList.toggle("has-error", Boolean(message));
+  }
+
+  function validate() {
+    let isValid = true;
+
+    const name = fields.fullName.el.value.trim();
+    if (!name) {
+      setError("fullName", "Please enter your name.");
+      isValid = false;
+    } else if (name.length < 2) {
+      setError("fullName", "That name looks too short.");
+      isValid = false;
+    } else {
+      setError("fullName", "");
+    }
+
+    const email = fields.emailAddress.el.value.trim();
+    if (!email) {
+      setError("emailAddress", "Please write an email address.");
+      isValid = false;
+    } else if (!emailPattern.test(email)) {
+      setError("emailAddress", "Please write a correct email standard.");
+      isValid = false;
+    } else {
+      setError("emailAddress", "");
+    }
+
+    const subject = fields.subject.el.value.trim();
+    if (!subject) {
+      setError("subject", "Please specify a short subject topic.");
+      isValid = false;
+    } else {
+      setError("subject", "");
+    }
+
+    const message = fields.message.el.value.trim();
+    if (!message) {
+      setError("message", "Please share a brief message detail.");
+      isValid = false;
+    } else if (message.length < 10) {
+      setError("message", "Kindly write at least 10 letters outlining what you need.");
+      isValid = false;
+    } else {
+      setError("message", "");
+    }
+
+    return isValid;
+  }
+
+  // Clear errors live on input
+  Object.keys(fields).forEach((key) => {
+    fields[key].el.addEventListener("input", () => {
+      const parent = fields[key].el.closest(".form-field");
+      if (parent && parent.classList.contains("has-error")) {
+        setError(key, "");
+      }
+    });
+  });
+
+  // Keep WhatsApp message synchronization up-to-date
+  function syncWhatsappHandoff() {
+    const name = fields.fullName.el.value.trim();
+    const subject = fields.subject.el.value.trim();
+    const message = fields.message.el.value.trim();
+
+    const composedText = [
+      name ? `Hi, my name is ${name}.` : "Hi,",
+      subject ? `Regarding: ${subject}.` : "",
+      message || CONFIG.whatsappDefaultMessage
+    ].filter(Boolean).join(" ");
+
+    formWhatsappLink.setAttribute("href", buildWhatsappUrl(composedText));
+  }
+
+  form.addEventListener("input", syncWhatsappHandoff);
+  if (formWhatsappLink) {
+    formWhatsappLink.setAttribute("href", buildWhatsappUrl());
+    formWhatsappLink.setAttribute("target", "_blank");
+    formWhatsappLink.setAttribute("rel", "noopener");
+  }
+
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    if (!validate()) {
+      showToast({
+        type: "error",
+        title: "Please check details",
+        message: "Verify the highlighted red boxes before pressing send."
+      });
+      return;
+    }
+
+    const payload = {
+      fullName: fields.fullName.el.value.trim(),
+      email: fields.emailAddress.el.value.trim(),
+      subject: fields.subject.el.value.trim(),
+      message: fields.message.el.value.trim()
+    };
+
+    setSubmitting(true);
+
+    const [emailResult, whatsappResult] = await Promise.allSettled([
+      submitContactForm(payload),
+      notifyOwnerViaWhatsapp(payload)
+    ]);
+
+    setSubmitting(false);
+
+    if (emailResult.status === "fulfilled" && emailResult.value?.ok !== false) {
+      showToast({
+        type: "success",
+        title: "Message delivered successfully",
+        message: "Thank you. We will review your inquiry and reply soon."
+      });
+      form.reset();
+      syncWhatsappHandoff();
+    } else {
+      console.error("Transmission error:", emailResult.reason);
+      showToast({
+        type: "error",
+        title: "Submission failed",
+        message: "We faced an issue sending this email. Please tap 'Instant Chat on WhatsApp'!"
+      });
+    }
+
+    if (whatsappResult.status === "rejected") {
+      console.warn("Backend API warning (WhatsApp proxy is off or loading):", whatsappResult.reason);
+    }
+  });
+
+  function setSubmitting(isSubmitting) {
+    submitBtn.classList.toggle("is-loading", isSubmitting);
+    submitBtn.disabled = isSubmitting;
+  }
+}
+
+/* ---------------------------------------------------------------------
+   Proxy call to Secure WhatsApp Backend
+--------------------------------------------------------------------- */
+async function notifyOwnerViaWhatsapp(payload) {
+  if (!CONFIG.whatsappApi || !CONFIG.whatsappApi.enabled) return;
+
+  try {
+    const res = await fetch(CONFIG.whatsappApi.notifyEndpoint, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload)
+    });
+
+    if (!res.ok) {
+      const errorText = await res.text().catch(() => "");
+      throw new Error(`WhatsApp API responded with status ${res.status}: ${errorText}`);
+    }
+    return res.json();
+  } catch (err) {
+    throw err;
+  }
+}
+
+/* ---------------------------------------------------------------------
+   Email Handlers (EmailJS or Demo Fallback)
+--------------------------------------------------------------------- */
+async function submitContactForm(payload) {
+  const isEmailJSConfigured = CONFIG.emailjs.templateId && !CONFIG.emailjs.templateId.includes("YOUR_");
+  const actualMode = isEmailJSConfigured ? CONFIG.formMode : "demo";
+
+  switch (actualMode) {
+    case "emailjs": {
+      if (typeof emailjs === "undefined") {
+        throw new Error("EmailJS SDK script tag missing on page.");
+      }
+      emailjs.init(CONFIG.emailjs.publicKey);
+      return emailjs.send(CONFIG.emailjs.serviceId, CONFIG.emailjs.templateId, {
+        name: payload.fullName,
+        email: payload.email,
+        title: payload.subject,
+        message: payload.message
+      }).then(res => ({ ok: true, details: res }));
+    }
+
+    case "demo":
+    default: {
+      await new Promise((resolve) => setTimeout(resolve, 1000));
+      return { ok: true, simulated: true };
+    }
+  }
+}
+
+/* ---------------------------------------------------------------------
+   Dynamic Toast Notification HUD
+--------------------------------------------------------------------- */
+let toastTimeoutId = null;
+
+function showToast({ type = "success", title, message }) {
+  const toast = document.getElementById("toast");
+  const icon = document.getElementById("toastIcon");
+  const titleEl = document.getElementById("toastTitle");
+  const messageEl = document.getElementById("toastMessage");
+
+  if (!toast || !icon || !titleEl || !messageEl) return;
+
+  titleEl.textContent = title;
+  messageEl.textContent = message;
+
+  const successIcon = `<svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#4caf7d" stroke-width="1.5"/><path d="M8 12.5l2.5 2.5L16 9" stroke="#4caf7d" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+  const errorIcon = `<svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#e5635b" stroke-width="1.5"/><path d="M12 8v5M12 16h.01" stroke="#e5635b" stroke-width="1.6" stroke-linecap="round"/></svg>`;
+
+  icon.innerHTML = type === "success" ? successIcon : errorIcon;
+  toast.classList.toggle("is-error", type === "error");
+  toast.classList.add("is-visible");
+
+  clearTimeout(toastTimeoutId);
+  toastTimeoutId = setTimeout(() => hideToast(), 5500);
+}
+
+function hideToast() {
+  const toast = document.getElementById("toast");
+  if (toast) toast.classList.remove("is-visible");
+}
+
+function initToastClose() {
+  const closeBtn = document.getElementById("toastClose");
+  if (closeBtn) {
+    closeBtn.addEventListener("click", () => {
+      clearTimeout(toastTimeoutId);
+      hideToast();
+    });
+  }
+}
+
+/* ---------------------------------------------------------------------
+   Back-to-top Scrolling Button
+--------------------------------------------------------------------- */
+function initBackToTop() {
+  const btn = document.getElementById("backToTop");
+  if (!btn) return;
+  const toggle = () => btn.classList.toggle("is-visible", window.scrollY > 600);
+  toggle();
+  window.addEventListener("scroll", toggle, { passive: true });
+  btn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+}
+/* =========================================================================
+   ENHANCEMENTS — Intro Loader & Theme Toggle
+   ========================================================================= */
+
+/* ----- Intro Loader ----- */
+(function initIntroLoader() {
+  const loader = document.getElementById("introLoader");
+  if (!loader) return;
+
+  // Dismiss after animation completes (~2.6s total)
+  const dismiss = () => {
+    loader.classList.add("hidden");
+    document.body.classList.remove("intro-loading");
+    // Remove from DOM after fade-out
+    loader.addEventListener("animationend", () => {
+      loader.remove();
+    }, { once: true });
+  };
+
+  // Trigger dismiss after 2.6s (covers all intro animations)
+  setTimeout(dismiss, 2650);
+})();
+
+/* ----- Theme Toggle ----- */
+(function initThemeToggle() {
+  const btn = document.getElementById("themeToggle");
+  if (!btn) return;
+
+  // Restore saved preference
+  const saved = localStorage.getItem("abraj-theme");
+  if (saved === "light") {
+    document.body.classList.add("light-theme");
+  }
+
+  btn.addEventListener("click", () => {
+    const isLight = document.body.classList.toggle("light-theme");
+    localStorage.setItem("abraj-theme", isLight ? "light" : "dark");
+  });
+})();
+
+</script>
+</body>
+</html>
